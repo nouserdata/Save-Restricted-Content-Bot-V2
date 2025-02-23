@@ -39,14 +39,14 @@ async def subscribe(app, message):
       try:
          user = await app.get_chat_member(update_channel, message.from_user.id)
          if user.status == "kicked":
-            await message.reply_text("You are Banned. Contact -- @devgaganin")
+            await message.reply_text("You are Banned. Contact -- @SEM2JOB")
             return 1
       except UserNotParticipant:
-        caption = f"Join our channel to use the bot"
-        await message.reply_photo(photo="https://graph.org/file/d44f024a08ded19452152.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now...", url=f"{url}")]]))
+        caption = f"Join our channel to use the bot pahle channel kar laure 😁"
+        await message.reply_photo(photo="https://te.legra.ph/file/6a2165a6d5254a17db028-07795ad27be477f3a2.jpg",caption=caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Join Now... karo", url=f"{url}")]]))
         return 1
       except Exception:
-         await message.reply_text("Something Went Wrong. Contact us @devgaganin...")
+         await message.reply_text("Something Went Wrong. Contact us @SEM2JOB..")
          return 1
 async def get_seconds(time_string):
     def extract_value_and_unit(ts):
@@ -157,7 +157,7 @@ async def userbot_join(userbot, invite_link):
     except UserAlreadyParticipant:
         return "User is already a participant."
     except (InviteHashInvalid, InviteHashExpired):
-        return "Could not join. Maybe your link is expired or Invalid."
+        return "Could not join. Maybe your link is expired or Invalid sahi se kar laure."
     except FloodWait:
         return "Too many requests, try again later."
     except Exception as e:
@@ -250,7 +250,7 @@ async def progress_callback(current, total, progress_message):
     f"│ **__Progress:__** {percent:.2f}%\n"
     f"│ **__Uploaded:__** {current_mb:.2f} MB / {total_mb:.2f} MB\n"
     f"╰──────────────────╯\n\n"
-    f"**__Powered by Team SPY__**"
+    f"**__🛍 PAID BOT 🤖: @SEM2JOB__**"
         )
 
         last_update_time = current_time
