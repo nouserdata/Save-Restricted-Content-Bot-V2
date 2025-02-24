@@ -73,9 +73,9 @@ async def token_handler(client, message):
     msg = await app.get_messages(chat_id, 796)
     user_id = message.chat.id
     if len(message.command) <= 1:
-        image_url = "https://i.postimg.cc/v8q8kGyz/startimg-1.jpg"
-        join_button = InlineKeyboardButton("Join Channel", url="https://t.me/team_spy_pro")
-        premium = InlineKeyboardButton("Get Premium", url="https://t.me/kingofpatal")   
+        image_url = "https://te.legra.ph/file/73ec34a05a7e5e166e64f-d202f1c57c03e5037c.jpg"
+        join_button = InlineKeyboardButton("✅️JOIN CHANNEL", url="https://t.me/SEM2JOB_FREE")
+        premium = InlineKeyboardButton("🛍 BUY PREMIUM", url="https://t.me/SEM2JOB")   
         keyboard = InlineKeyboardMarkup([
             [join_button],   
             [premium]    
@@ -83,11 +83,14 @@ async def token_handler(client, message):
          
         await message.reply_photo(
             msg.photo.file_id,
-            caption=(
-                "Hi 👋 Welcome, Wanna intro...?\n\n"
-                "✳️ I can save posts from channels or groups where forwarding is off. I can download videos/audio from YT, INSTA, ... social platforms\n"
-                "✳️ Simply send the post link of a public channel. For private channels, do /login. Send /help to know more."
-            ),
+            caption = (
+    "🚀 **Welcome to the Ultimate Restricted Post Saver!**\n\n"
+    "✅ **Save Restricted Posts** – Easily retrieve posts from channels & groups even when forwarding is disabled.\n"
+    "🔗 **Effortless Access** – Just send a **public post link**, and I’ll fetch it for you.\n"
+    "🔐 **Private Channel Support** – Use **`/login`** to access content from private channels.\n"
+    "💡 **Need Assistance?** – Type **`/help`** to explore all features and commands.\n\n"
+    "⚡ Smart, Fast & Secure – Your Ultimate Post Saver! 🚀"
+),
             reply_markup=keyboard
         )
         return  
