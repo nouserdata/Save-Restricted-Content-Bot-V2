@@ -73,7 +73,7 @@ async def token_handler(client, message):
     msg = await app.get_messages(chat_id, 796)
     user_id = message.chat.id
     if len(message.command) <= 1:
-        image_url = "https://te.legra.ph/file/73ec34a05a7e5e166e64f-d202f1c57c03e5037c.jpg"
+        image_url = "https://imgur.com/a/1hisPQG"
         join_button = InlineKeyboardButton("✅️JOIN CHANNEL", url="https://t.me/SEM2JOB_FREE")
         premium = InlineKeyboardButton("🛍 BUY PREMIUM", url="https://t.me/SEM2JOB")   
         keyboard = InlineKeyboardMarkup([
